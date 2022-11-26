@@ -19,4 +19,5 @@ The base folder represents ~/
 - Redshift
 - Oh-my-zsh
 - Nvchad
+- Deja Dup
 
