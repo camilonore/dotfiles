@@ -43,6 +43,7 @@
 .config/touchegg/.touchegg:0.lock
 .config/touchegg/.touchegg_0.lock
 .config/touchegg/.touchegg_1.lock
+.config/conky-manager2.json
 .config/transmission/
 .config/unity3d/
 .config/user-dirs.dirs
@@ -90,9 +91,9 @@
 
 # ignore specific directories
 Descargas/
+Imágenes/
 Documentos/
 GOG Games/
-"Im\303\241genes/"
 dev/
 go/
 octave/
