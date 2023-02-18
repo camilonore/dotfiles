@@ -88,6 +88,21 @@
 .zoom/
 .zsh_history
 .zshrc.pre-oh-my-zsh
+.oh-my-zsh/.editorconfig
+.oh-my-zsh/.prettierrc
+.oh-my-zsh/CODE_OF_CONDUCT.md
+.oh-my-zsh/CONTRIBUTING.md
+.oh-my-zsh/LICENSE.txt
+.oh-my-zsh/README.md
+.oh-my-zsh/SECURITY.md
+.oh-my-zsh/cache/
+.oh-my-zsh/lib/
+.oh-my-zsh/log/
+.oh-my-zsh/oh-my-zsh.sh
+.oh-my-zsh/plugins/
+.oh-my-zsh/templates/
+.oh-my-zsh/themes/
+.oh-my-zsh/tools/
 
 # ignore specific directories
 Descargas/
