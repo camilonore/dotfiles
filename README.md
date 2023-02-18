@@ -20,4 +20,5 @@ The base folder represents ~/
 - Oh-my-zsh
 - Nvchad
 - Deja Dup
-
+- GNU octave
+- KiCad
