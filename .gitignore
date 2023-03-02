@@ -103,6 +103,10 @@
 .oh-my-zsh/templates/
 .oh-my-zsh/themes/
 .oh-my-zsh/tools/
+.oh-my-zsh/.github/
+.oh-my-zsh/.gitignore
+.oh-my-zsh/.gitpod.Dockerfile
+.oh-my-zsh/.gitpod.yml
 
 # ignore specific directories
 Descargas/
