@@ -1,0 +1,3 @@
+[submodule ".oh-my-zsh/custom/autocomplete/zsh-autocomplete"]
+	path = .oh-my-zsh/custom/autocomplete/zsh-autocomplete
+	url = git@github.com:marlonrichert/zsh-autocomplete.git
