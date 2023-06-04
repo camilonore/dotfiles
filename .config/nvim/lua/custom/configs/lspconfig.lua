@@ -1,17 +1,16 @@
--- Don't forget to run :PackerCompile
--- Mason -> LSP
-
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
+
+-- if you just want default config for the servers then put them in a table
 local servers = {
   "html",
   "cssls",
   "tsserver",
   "gopls",
   "emmet_ls",
-  "sumneko_lua",
+  "lua_ls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -20,3 +19,6 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+--
+-- lspconfig.pyright.setup { blabla}

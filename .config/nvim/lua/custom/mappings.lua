@@ -1,11 +1,13 @@
+---@type MappingsTable
 local M = {}
+
 M.general = {
   n = {
+    [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<C-d>"] = { "<C-d>zz", "Go half bottom screen and center" },
     ["<C-u>"] = { "<C-u>zz", "Go half top screen and center" },
   },
 }
-
 M.comment = {
   -- toggle comment in both modes
   n = {
@@ -24,4 +26,6 @@ M.comment = {
     },
   },
 }
+
+
 return M

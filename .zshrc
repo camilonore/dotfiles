@@ -114,6 +114,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias vim='nvim'
 alias dev="cd ~/dev"
 alias rundev="code .;lo 3000;npm run dev"
+alias prundev="code .;lo 3000;pnpm run dev"
 alias gst="git status"
 alias gcm="git commit -m"
 alias gaa="git add ."
@@ -122,12 +123,15 @@ alias gpl="git pull origin main"
 alias vimconfig='cd ~/.config/nvim/lua/custom/; vim .'
 alias kittyconfig='cd ~/.config/kitty/; vim kitty.conf'
 alias cpfiles='~/dev/dotfiles/copy-to-dotfiles.sh'
+alias icat="kitty +kitten icat"
 
 # fnm
 export PATH="/home/camilonore/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
-
 # pnpm 
 export PNPM_HOME="/home/camilonore/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# Github copilot CLI
+eval "$(github-copilot-cli alias -- "$0")"
