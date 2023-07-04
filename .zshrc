@@ -1,17 +1,14 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# zsh-autocomplete
-source ~/.oh-my-zsh/custom/autocomplete/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$GOPATH/bin
 export GOPATH=$HOME/go
 export PATH=$PATH:$PATH:$GOROOT/bin:$GOPATH/bin
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -132,6 +129,9 @@ eval "`fnm env`"
 # pnpm 
 export PNPM_HOME="/home/camilonore/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# zsh-autocomplete
+source ~/.oh-my-zsh/custom/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Github copilot CLI
 eval "$(github-copilot-cli alias -- "$0")"
