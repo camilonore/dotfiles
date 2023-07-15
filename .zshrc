@@ -133,5 +133,15 @@ export PATH="$PNPM_HOME:$PATH"
 # zsh-autocomplete
 source ~/.oh-my-zsh/custom/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
+# Mappings
+
+function clear_screen() {
+  zle -U
+  clear
+}
+zle -N clear_screen
+
+bindkey '^O' clear_screen
+
 # Github copilot CLI
 eval "$(github-copilot-cli alias -- "$0")"

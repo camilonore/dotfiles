@@ -1,4 +1,3 @@
----@type MappingsTable
 local M = {}
 
 M.general = {
@@ -8,6 +7,7 @@ M.general = {
     ["<C-u>"] = { "<C-u>zz", "Go half top screen and center" },
   },
 }
+
 M.comment = {
   -- toggle comment in both modes
   n = {
@@ -26,6 +26,5 @@ M.comment = {
     },
   },
 }
-
 
 return M

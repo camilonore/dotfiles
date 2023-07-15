@@ -20,6 +20,19 @@ files=(
 # Destination directory
 destination="$HOME/dev/dotfiles"
 
+# Remove current files
+
+for file in "${files[@]}"; do
+  if [[ $file == */ ]]; then
+    new_file="${file::-1}"
+    rm -rf "$destination/$new_file"
+    echo "Removed directory $destination/$new_file"
+  else
+    rm -rf "$destination/$file"
+    echo "Removed $destination/$file"
+  fi
+done
+
 # Loop through each file and copy it to the destination directory
 for file in "${files[@]}"; do
 
