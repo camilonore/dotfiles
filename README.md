@@ -1,24 +1,40 @@
-# dotfiles
+# Dotfiles
 
-The base folder represents ~/
+The base folder represents the home directory: ~/
 
-# Installed Apps
+## Installed Apps
 
-- Spotify
-- Plank
-- CopyQ
+### System Utilities:
+
 - Albert
 - Conky
 - Conky Manager 2
-- KDE Connect
-- Nautilus
+- Redshift
+- Deja Dup
+
+### Development:
+
+- Kitty Terminal
 - Vscode
 - Nvim
 - Runjs
 - SciDavis
-- Redshift
 - Oh-my-zsh
 - Nvchad
-- Deja Dup
-- GNU octave
 - KiCad
+- GNU Octave
+- Wolfram Mathematica 13
+- Matlab
+
+### Productivity and Tools:
+
+- Spotify
+- Plank
+- CopyQ
+- Nautilus
+- KDE Connect
+
+### Wine Apps:
+
+- Proteus
+- LTSpice
