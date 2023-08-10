@@ -121,6 +121,7 @@ alias vimconfig='cd ~/.config/nvim/lua/custom/; vim .'
 alias kittyconfig='cd ~/.config/kitty/; vim kitty.conf'
 alias cpfiles='~/dev/dotfiles/copy-to-dotfiles.sh'
 alias icat="kitty +kitten icat"
+alias cat="batcat"
 
 # fnm
 export PATH="/home/camilonore/.local/share/fnm:$PATH"
