@@ -47,4 +47,3 @@ for file in "${files[@]}"; do
 
   echo "Copied $file to $destination/$file"
 done
-
