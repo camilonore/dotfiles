@@ -11,6 +11,7 @@ The base folder represents the home directory: ~/
 - Conky Manager 2
 - Redshift
 - Deja Dup
+- Zathura
 
 ### Development:
 
@@ -25,6 +26,7 @@ The base folder represents the home directory: ~/
 - GNU Octave
 - Wolfram Mathematica 13
 - Matlab
+- Quaartus
 
 ### Productivity and Tools:
 
