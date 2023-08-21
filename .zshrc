@@ -122,6 +122,8 @@ alias kittyconfig='cd ~/.config/kitty/; vim kitty.conf'
 alias cpfiles='~/dev/dotfiles/copy-to-dotfiles.sh'
 alias icat="kitty +kitten icat"
 alias cat="batcat"
+alias quartus="$HOME/altera/13.0sp1/quartus/bin/quartus --64bit"
+alias zathuraconfig='cd ~/.config/zathura/; vim zathurarc'
 
 # fnm
 export PATH="/home/camilonore/.local/share/fnm:$PATH"
@@ -131,11 +133,13 @@ eval "`fnm env`"
 export PNPM_HOME="/home/camilonore/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+# quartus
+export LD_LIBRARY_PATH=$HOME/altera/13.0sp1/quartus/libpng12/usr/lib/x86_64-linux-gnu
+
 # zsh-autocomplete
 source ~/.oh-my-zsh/custom/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Mappings
-
 function clear_screen() {
   zle -U
   clear
