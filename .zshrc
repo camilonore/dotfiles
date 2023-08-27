@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="nvim ~/.zshrc"
+alias loadzsh="source ~/.zshrc"
 alias vim='nvim'
 alias dev="cd ~/dev"
 alias rundev="code .;lo 3000;npm run dev"
@@ -122,7 +123,7 @@ alias kittyconfig='cd ~/.config/kitty/; vim kitty.conf'
 alias cpfiles='~/dev/dotfiles/copy-to-dotfiles.sh'
 alias icat="kitty +kitten icat"
 alias cat="batcat"
-alias quartus="$HOME/altera/13.0sp1/quartus/bin/quartus --64bit"
+alias newquartusfpga="dmesg | tail; lsusb | grep Altera;vim /etc/udev/rules.d/51-usbblaster.rules"
 alias zathuraconfig='cd ~/.config/zathura/; vim zathurarc'
 
 # fnm
@@ -134,7 +135,14 @@ export PNPM_HOME="/home/camilonore/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
 # quartus
-export LD_LIBRARY_PATH=$HOME/altera/13.0sp1/quartus/libpng12/usr/lib/x86_64-linux-gnu
+export QUARTUS_64BIT=1 
+export ALTERA_ROOT="$HOME/altera"
+export QUARTUS_ROOTDIR_OVERRIDE="$ALTERA_ROOT/13.0sp1/quartus/"
+export QSYS_ROOTDIR="$QUARTUS_ROOTDIR_OVERRIDE/sopc_builder/bin"
+export QUARTUS_LIBRARY_PATHS="$QUARTUS_ROOTDIR_OVERRIDE/linux/:/lib/x86_64-linux-gnu/"
+export SOPC_KIT_NIOS2="$ALTERA_ROOT/nios2eds"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$QUARTUS_LIBRARY_PATHS"
+export PATH="$PATH:$ALTERA_ROOT/13.0sp1/quartus/bin"
 
 # zsh-autocomplete
 source ~/.oh-my-zsh/custom/zsh-autocomplete/zsh-autocomplete.plugin.zsh

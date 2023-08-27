@@ -26,7 +26,7 @@ The base folder represents the home directory: ~/
 - GNU Octave
 - Wolfram Mathematica 13
 - Matlab
-- Quaartus
+- Quartus
 
 ### Productivity and Tools:
 
